@@ -1,0 +1,113 @@
+<!--Created by dsyafaatul-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="dsyafatul">
+	<title>Selamat datang di SMK PUI Majalengka</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="icon" type="image/png" href="assets/img/LOGO.png">
+</head>
+<body>
+	<div class="contrainer">
+		<div class="header" ></div>
+		<div class="nav green">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" >Profile</a>
+					<ul>
+						<li><a href="visi_misi.html">visi misi</a></li>
+						<li><a href="profile.html">Sekolah</a></li>
+						<li><a href="guru.html">Guru</a></li>
+					</ul>
+				</li>
+				<li><a href="sejarah.html" >Sejarah</a></li>
+				<li><a href="#">About Me</a>
+					<ul>
+						<li><a target="_black" href="http://facebook.com/dsyafaatul">Facebook</a></li>
+						<li><a target="_black" href="https://dsyafaatul.blogspot.co.id">Blogger</a></li>
+						<li><a target="_black" href="http://dsyafaatul.comxa.com">Website</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="search">
+				<input id="text" type="text" placeholder="Search">
+				<script>
+					function cari(){
+						vquery = document.getElementById('text').value;
+						link = 'https://www.google.co.id/search?q=';
+						window.location=link+vquery;
+					}
+				</script>
+				<input class="submit green" value="cari" type="button" onclick="cari()">
+			</div>
+		</div>
+			<div class="notification">
+				<marquee behavior="" direction="" id="textnotif">Selamat datang di website <a target="_black" href="http://facebook.com/smkpuimajalengka" onMouseOver="getElementById('textnotif').setAttribute('scrollamount', 0, 0);" OnMouseOut="getElementById('textnotif').setAttribute('scrollamount', 6, 0);" >SMK PUI Majalengka</a></marquee>
+			</div>
+		<div class="main" >
+		<div class="sidebar" >
+			<div class="submenu">
+			<div class="menu green">Waktu</div>
+				<div class="menu-value">
+				<div id="clock" class=""></div>
+				</div>
+			</div>
+			<script>
+			function digital(){
+				var today = new Date();
+				var jam = today.getHours();
+				var menit = today.getMinutes();
+				var detik = today.getSeconds();
+				document.getElementById('clock').innerHTML = jam+":"+menit+":"+detik;
+				setTimeout("digital()",100);
+			}
+			digital();
+			</script>
+			<div class="submenu">
+			<div class="menu green">Tanggal</div>
+				<div class="menu-value">
+				<div id="tanggal"></div>
+				</div>
+			</div>
+			<script>
+				var today = new Date();
+				var tanggal = today.getDate();
+				document.getElementById('tanggal').innerHTML = tanggal;
+			</script>
+		</div>
+		<div class="content">
+			<h2>Sejarah SMK PUI Majalengka</h2>
+			<p>Sebagai salah satu lembaga pendidikan yang bertujuan mencetak sumber daya manusia berkualitas sebagai tenaga kerja tingkat menengah yang sesuai dengan standar kebutuhan DUDI (Dunia Usaha dan Dunia Industri). SMK PUI Majalengka senantiasa selalu mengadakan perubahan dan inovasi dalam berbagai lini dan bidang, guna memenuhi tuntutan masyarakat dan kebutuhan pasar, disamping itu dalam rangka peningkatan mutu pelayanan pendidikan SMK PUI Majalengka kini tengah mengupayakan untuk mendapatkan Standar Manajemen Mutu ISO.9001-2008.
+			Selain itu pula SMK PUI Majalengka menjadikan salah satu lembaga pendidikan yang bertujuan mempersiapkan tenaga kerja yang berpotensi untuk mencetak sumber daya manusia yang berkualitas baik Imtaq maupun Iptek juga siap menjadi sekolah unggulan yang menghasilkan lulusan yang kompeten dibidangnya.</p>
+
+			<p>SMK PUI Majalengka berdiri 8 Desember 1997 yang pada awalnya didirikan oleh: Bapak Dodo Sutardo, Drs. Zen Aris, Bapak Ono Karsono, Drs. Umu Mu'minullah, Bapak Marzuki Salih, Drs. Zaenal Mutaqin, Drs. Yusuf Sefullah, Drs. Zaenal Abidin dan Fuadi Toha. Hingga kini terus melakukan peningkatan berkelanjutan yang kompeten di bidangnya.
+			Sekolah yang selalu "eksis" pada setiap kegiatan yang diadakan di Kabupaten Majalengka ini berdiri di bawah naungan Pimpinan Badan Penyelenggara Persatuan Umat Islam Kabupaten Majalengka, dengan beberapa penasehat diantaranya:</p>
+			<br>
+				<ol>
+			    <li>Dr. H. Karna Sobahi, M.M.Pd.</li><br>
+			    <li>H. M. Yunus Sanusi, SH.,M. H.</li><br>
+			    <li>Drs. H. Z. Abidin</li><br>
+			    </ol>
+
+
+			<u>Badan Penyelenggara</u><br>
+
+			Ketua : H. O. Sukatma, S.Pd., M.Pd.<br><br>
+
+			<u>Komite Sekolah</u><br>
+
+			Ketua : Drs. H. U. Saprudin, M.M.Pd.<br>
+
+
+			<p>Sekolah yang berdiri kokoh di atas tanah seluas kurang lebih 10700 meter persegi ini terletak di Jalan Suma No. 478, Kelurahan Babakan Jawa, Majalengka. Letaknya pun cukup strategis dan terjangkau karena dilewati jalur angkutan perkotaan 1A yang biasa beroperasi di Daerah tersebut, hingga hal itulah yang menjadi salah satu faktor pendorong sekolah ini mudah dikenali masyarakat terutama konsumen pendidikan.
+			untuk memenuhi kepuasan masyarakat, SMK PUI Majalengka membuka program keahlian, yang meliputi : Teknik Pemanfaatan Tenaga Listrik, Teknik Audio Video dan Kendaraan Ringan, selang beberapa tahun kemudian mengembangkan program keahlian Teknik Pemesinan, dan dua tahun terakhir ini berhasil menambah program keahlian Rekayasa Perangkat Lunak yang langsung disambut antusias masyarakat hingga terjadi penambahaan jumlah peserta didik dari tahun sebelumnya yang cukup signifikan, adapun jumlah peserta didik seluruhnya yakni berjumlah 713 siswa dari berbagai program keahlian diimbangi staf guru sebanyak 45 tenaga kerja baik Adaptif, Normatif ataupun Profuktif, dan sepuluh tenaga Administrasi (Tata Usaha).</p>
+		</div>
+		<div class="clear"></div>
+		</div>
+	<div class="footer green" >
+		copyright &copy 2017 | <a target="_black" href="http://facebook.com/dsyafaatul" >dsyafaatul</a> 
+	</div>
+	</div>
+</body>
+</html>

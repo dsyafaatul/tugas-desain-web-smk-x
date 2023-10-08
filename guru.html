@@ -1,0 +1,153 @@
+<!--Created by dsyafaatul-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="dsyafatul">
+	<title>Selamat datang di SMK PUI Majalengka</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="icon" type="image/png" href="assets/img/LOGO.png">
+</head>
+<body>
+	<div class="contrainer">
+		<div class="header" ></div>
+		<div class="nav green">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" >Profile</a>
+					<ul>
+						<li><a href="visi_misi.html">visi misi</a></li>
+						<li><a href="profile.html">Sekolah</a></li>
+						<li><a href="guru.html">Guru</a></li>
+					</ul>
+				</li>
+				<li><a href="sejarah.html" >Sejarah</a></li>
+				<li><a href="#">About Me</a>
+					<ul>
+						<li><a target="_black" href="http://facebook.com/dsyafaatul">Facebook</a></li>
+						<li><a target="_black" href="https://dsyafaatul.blogspot.co.id">Blogger</a></li>
+						<li><a target="_black" href="http://dsyafaatul.comxa.com">Website</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="search">
+				<input id="text" type="text" placeholder="Search">
+				<script>
+					function cari(){
+						vquery = document.getElementById('text').value;
+						link = 'https://www.google.co.id/search?q=';
+						window.location=link+vquery;
+					}
+				</script>
+				<input class="submit green" value="cari" type="button" onclick="cari()">
+			</div>
+		</div>
+			<div class="notification">
+				<marquee behavior="" direction="" id="textnotif">Selamat datang di website <a target="_black" href="http://facebook.com/smkpuimajalengka" onMouseOver="getElementById('textnotif').setAttribute('scrollamount', 0, 0);" OnMouseOut="getElementById('textnotif').setAttribute('scrollamount', 6, 0);" >SMK PUI Majalengka</a></marquee>
+			</div>
+		<div class="main" >
+		<div class="sidebar" >
+			<div class="submenu">
+			<div class="menu green">Waktu</div>
+				<div class="menu-value">
+				<div id="clock" class=""></div>
+				</div>
+			</div>
+			<script>
+			function digital(){
+				var today = new Date();
+				var jam = today.getHours();
+				var menit = today.getMinutes();
+				var detik = today.getSeconds();
+				document.getElementById('clock').innerHTML = jam+":"+menit+":"+detik;
+				setTimeout("digital()",100);
+			}
+			digital();
+			</script>
+			<div class="submenu">
+			<div class="menu green">Tanggal</div>
+				<div class="menu-value">
+				<div id="tanggal"></div>
+				</div>
+			</div>
+			<script>
+				var today = new Date();
+				var tanggal = today.getDate();
+				document.getElementById('tanggal').innerHTML = tanggal;
+			</script>
+		</div>
+		<div class="content">
+			<h2>Nama guru di SMK PUI Majalengka</h2>
+			<ol >
+				<li>H. Adang Ardali.S.Pd . MT (Kepala Sekolah)</li>
+				<li>Ozan P. Muslim. S.Ag</li>
+				<li>Agus Mulyana. S.Pd</li>
+				<li>Drs. Maman Imanudin</li>
+				<li>Imam Yustiarto. S.Pd</li>
+				<li>Yati Sofiyati. S.Pd</li>
+				<li>Rosa Darma. S.Pd</li>
+				<li>Ujang Sudiarso. S.Pd</li>
+				<li>Sa'adatul A. M. S.Pd</li>
+				<li>M.Budiawan. S.Pd</li>
+				<li>Eti Sukmawati. S.Pd</li>
+				<li>Elis Ikhlasiyah. S.Pd</li>
+				<li>Yuyun R.Y. S.Pd</li>
+				<li>Udin Wahyudin. S.Pd</li>
+				<li>Tatin Supriatin. S.Pd</li>
+				<li>Asep Sudiana. S.Pd</li>
+				<li>Abdul Ruhul Kudus. S.Pd</li>
+				<li>Yudi Sumantha. S.T</li>
+				<li>Yaya Permana. S.T</li>
+				<li>Yuli Yuliati. S.Pd</li>
+				<li>Nining Fatimah. S.Pd</li>
+				<li>Iwan Ridwan. S.Pd</li>
+				<li>Rahmat. S.Pd</li>
+				<li>Tenny Sukmawa A. S.E</li>
+				<li>Dini R.A. S.Si</li>
+				<li>Yaya Warlia. S.Pd</li>
+				<li>Hivan T.Y. S.Si</li>
+				<li>Iif Miftah Fauzi. S.Ag</li>
+				<li>Suhardi. S.Pd</li>
+				<li>Yanti Nurhayati. S.Pd</li>
+				<li>Dewi Nurhayati. S.Pd</li>
+				<li>Abdulah Purwanto. S.T</li>
+				<li>Nopiyanti Suhastini. S.H</li>
+				<li>Dodi Rahmat Santoa. S.T</li>
+				<li>Imam A.Nur. S.Kom</li>
+				<li>Dedi Edianto P. S.Kom</li>
+				<li>Roni Asmara G. S.T</li>
+				<li>Yoga Rizky Prayoga. S.Pd</li>
+				<li>Iip Jayahuripna. S.Pd</li>
+				<li>Memen Surahman. S.Pd</li>
+				<li>Nursusilawati. S.Pd</li>
+				<li>Usep Irpan. S.Si</li>
+				<li>Lia Roiatul A. S.Pd</li>
+				<li>Moh. Faisal A. S.T</li>
+				<li>Ade Sunardi. S.Pdi</li>
+				<li>Nike Sri Novia. S.Pd</li>
+				<li>Ida Rosidah. S.Pd</li>
+				<li>Anita Dewi. S.Pd</li>
+				<li>Eis Endang J. S.Pd</li>
+				<li>Karta. S.Pd. M.Si</li>
+				<li>Engkos Koswara. S.T</li>
+				<li>Tata Karna. S.Pd.I</li>
+				<li>Ati Yuliati. S.Pd</li>
+				<li>Meti Kusmayanti. S.pd</li>
+				<li>Iik Hikmatu Akbar</li>
+				<li>Noris N Herwandy. S.Pd</li>
+				<li>Sutiaji Maulana Yusup</li>
+				<li>Septi Hidayati. S.Pd</li>
+				<li>Jaja Sudrajat. S.Pd</li>
+				<li>Dessy Sawitri. S.Ag</li>
+				<li>Dedi Purwandi. M.pd</li>
+				<li>Pipin Heryana. S.T</li>
+			</ol>
+		</div>
+		<div class="clear"></div>
+		</div>
+	<div class="footer green" >
+		copyright &copy 2017 | <a target="_black" href="http://facebook.com/dsyafaatul" >dsyafaatul</a> 
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!--Created by dsyafaatul-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="dsyafatul">
+	<title>Selamat datang di SMK PUI Majalengka</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="icon" type="image/png" href="assets/img/LOGO.png">
+</head>
+<body>
+	<div class="contrainer">
+		<div class="header" ></div>
+		<div class="nav green">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" >Profile</a>
+					<ul>
+						<li><a href="visi_misi.html">visi misi</a></li>
+						<li><a href="profile.html">Sekolah</a></li>
+						<li><a href="guru.html">Guru</a></li>
+					</ul>
+				</li>
+				<li><a href="sejarah.html" >Sejarah</a></li>
+				<li><a href="#">About Me</a>
+					<ul>
+						<li><a target="_black" href="http://facebook.com/dsyafaatul">Facebook</a></li>
+						<li><a target="_black" href="https://dsyafaatul.blogspot.co.id">Blogger</a></li>
+						<li><a target="_black" href="http://dsyafaatul.comxa.com">Website</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="search">
+				<input id="text" type="text" placeholder="Search">
+				<script>
+					function cari(){
+						vquery = document.getElementById('text').value;
+						link = 'https://www.google.co.id/search?q=';
+						window.location=link+vquery;
+					}
+				</script>
+				<input class="submit green" value="cari" type="button" onclick="cari()">
+			</div>
+		</div>
+			<div class="notification">
+				<marquee behavior="" direction="" id="textnotif">Selamat datang di website <a target="_black" href="http://facebook.com/smkpuimajalengka" onMouseOver="getElementById('textnotif').setAttribute('scrollamount', 0, 0);" OnMouseOut="getElementById('textnotif').setAttribute('scrollamount', 6, 0);" >SMK PUI Majalengka</a></marquee>
+			</div>
+		<div class="main" >
+		<div class="sidebar" >
+			<div class="submenu">
+			<div class="menu green">Waktu</div>
+				<div class="menu-value">
+				<div id="clock" class=""></div>
+				</div>
+			</div>
+			<script>
+			function digital(){
+				var today = new Date();
+				var jam = today.getHours();
+				var menit = today.getMinutes();
+				var detik = today.getSeconds();
+				document.getElementById('clock').innerHTML = jam+":"+menit+":"+detik;
+				setTimeout("digital()",100);
+			}
+			digital();
+			</script>
+			<div class="submenu">
+			<div class="menu green">Tanggal</div>
+				<div class="menu-value">
+				<div id="tanggal"></div>
+				</div>
+			</div>
+			<script>
+				var today = new Date();
+				var tanggal = today.getDate();
+				document.getElementById('tanggal').innerHTML = tanggal;
+			</script>
+		</div>
+		<div class="content">
+			<h2>Selamat datang di website SMK PUI Majalengka</h2>
+			<p>Selamat datang di website SMK PUI Majalengka,
+Kami ucapkan terima kasih atas kunjungan anda di website kami. kami menyediakan website ini untuk berbagi informasi seputar SMK PUI Majalengka, kami selalu berusaha yang terbaik untuk memenuhi kebutuhan anda dengan melakukan update pada konten web ini.
+Kami selalu mengutamakan pelayanan pendidikan yang optimal bagi siswa-siswi kami demi masa depan bangsa yang cerdas, inovatif, kreatif, dan siap bersaing di dunia kerja.
+Kami selalu mengedepankan penanaman keimanan dan ketaqwaan bagi siswa-siswi kami demi menciptakan generasi bangsa yang berpegang teguh pada syariat islam.
+sebagai lembaga pendidikan yang berdiri dibawah naungan Organisasi Persatuan Umat Islam, kami selalu berusaha dengan semaksimal mungkin supaya kecerdasan dan keterampilan anak didik kami digunakan untuk kemajuan bangsa dan negara.</p>
+		</div>
+		<div class="clear"></div>
+		</div>
+	<div class="footer green" >
+		copyright &copy 2017 | <a target="_black" href="http://facebook.com/dsyafaatul" >dsyafaatul</a> 
+	</div>
+	</div>
+</body>
+</html>
